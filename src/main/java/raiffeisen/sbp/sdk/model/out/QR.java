@@ -49,10 +49,6 @@ public abstract class QR {
         qrExpirationDate = time;
     }
 
-    public void setQrDescription(String qrDescription) {
-        this.qrDescription = qrDescription;
-    }
-
     public void verify() {
         createDate = DateUtil.checkDate(createDate);
         qrExpirationDate = DateUtil.calculateExpirationDate(qrExpirationDate, createDate, "QR.qrExpirationDate");

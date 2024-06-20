@@ -12,6 +12,7 @@ public final class QRVariable extends QR {
     public QR newInstance() {
         QRVariable qrVariable = new QRVariable();
         qrVariable.setAccount(account);
+        qrVariable.setQrDescription(qrDescription);
         return qrVariable;
     }
 }
