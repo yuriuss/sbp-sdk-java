@@ -14,13 +14,13 @@ public final class QRDynamic extends QR {
 
     @Override
     public QR newInstance() {
-        QRDynamic qrStatic = new QRDynamic(order, amount);
-        qrStatic.setAccount(account);
-        qrStatic.setAdditionalInfo(additionalInfo);
-        qrStatic.setCreateDate(createDate);
-        qrStatic.setPaymentDetails(paymentDetails);
-        qrStatic.setQrExpirationDate(qrExpirationDate);
-        qrStatic.setQrDescription(qrDescription);
-        return qrStatic;
+        QRDynamic qrDynamic = new QRDynamic(order, amount);
+        qrDynamic.setAccount(account);
+        qrDynamic.setAdditionalInfo(additionalInfo);
+        qrDynamic.setCreateDate(createDate);
+        qrDynamic.setPaymentDetails(paymentDetails);
+        qrDynamic.setQrExpirationDate(qrExpirationDate);
+        qrDynamic.setQrDescription(qrDescription);
+        return qrDynamic;
     }
 }
